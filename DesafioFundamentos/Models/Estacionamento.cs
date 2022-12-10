@@ -36,7 +36,7 @@ class Estacionamento
                 decimal quantidadeHoras = decimal.Parse(Console.ReadLine());
                 Console.WriteLine("Removendo veículo...");
                 this.veiculos.RemoveAt(i);
-                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de R$: {quantidadeHoras * this.precoPorHora + this.precoInicial}");
+                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de R$: {this.precoPorHora + this.precoInicial * quantidadeHoras}");
                 break;
             }else if(i == 0){
                 Console.WriteLine("Veículo não encontrado! Tente novamente.");
