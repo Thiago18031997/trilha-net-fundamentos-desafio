@@ -49,7 +49,7 @@ class Estacionamento
     {
         if (this.veiculos.Count == 0)
         {
-            Console.WriteLine("Sem veículos estacionados!");
+            Console.WriteLine("Sem veículos estacionados.");
         }
         foreach(Veiculo veiculo in this.veiculos)
         {
